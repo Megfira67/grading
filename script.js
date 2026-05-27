@@ -8,10 +8,10 @@ if(loginForm){
         const password = document.getElementById("password").value;
         const role = document.getElementById("role").value;
 
-        if(role === "teacher" && username === "teacher" && password === "2501"){
+        if(role === "teacher" && username === "teacher" && password === "1234"){
             window.location.href = "teacher.html";
         }
-        else if(role === "student" && username === "student" && password === "6709"){
+        else if(role === "student" && username === "student" && password === "1234"){
             window.location.href = "student.html";
         }
         else{
