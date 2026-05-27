@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+        <img src="logo.png" class="sidebar-logo">
+        <h2>Efoyta SGS</h2>
+
+        <ul>
+            <li>Dashboard</li>
+            <li>Students</li>
+            <li>Grades</li>
+            <li>Leaderboard</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <div class="topbar">
+            <h1>Teacher Dashboard</h1>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p>30</p>
+            </div>
+
+            <div class="card">
+                <h3>Passed Students</h3>
+                <p>26</p>
+            </div>
+
+            <div class="card failed-card">
+                <h3>Failed Students</h3>
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Student Marks</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>English</th>
+                        <th>Math</th>
+                        <th>Chemistry</th>
+                        <th>Physics</th>
+                        <th>Biology</th>
+                        <th>Agriculture</th>
+                        <th>IT</th>
+                        <th>WDD</th>
+                        <th>Average</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Abel</td>
+                        <td>80</td>
+                        <td>75</td>
+                        <td>60</td>
+                        <td>70</td>
+                        <td>68</td>
+                        <td>90</td>
+                        <td>95</td>
+                        <td>A</td>
+                        <td>76%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Daniel</td>
+                        <td>88</td>
+                        <td>92</td>
+                        <td>85</td>
+                        <td>81</td>
+                        <td>79</td>
+                        <td>75</td>
+                        <td>89</td>
+                        <td>A</td>
+                        <td>84%</td>
+                    </tr>
+
+                    <tr class="failed-row">
+                        <td>Hanna</td>
+                        <td>45</td>
+                        <td>40</td>
+                        <td>38</td>
+                        <td>50</td>
+                        <td>42</td>
+                        <td>55</td>
+                        <td>60</td>
+                        <td>C</td>
+                        <td>47%</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard">
+            <h2>Top Students</h2>
+
+            <ol>
+                <li>Daniel - 84%</li>
+                <li>Abel - 76%</li>
+            </ol>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
